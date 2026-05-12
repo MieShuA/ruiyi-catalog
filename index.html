@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>RUIYI 产品目录</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
+
+  :root {
+    --red: #D94F3D; --red-light: #F5EAE8; --red-dark: #A33020;
+    --ink: #1A1A1A; --ink2: #555; --ink3: #999;
+    --surface: #FAFAF8; --white: #FFFFFF; --border: #E8E4DF;
+    --radius: 14px; --radius-sm: 8px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--surface); color: var(--ink); min-height: 100vh; max-width: 480px; margin: 0 auto; }
+
+  .top-nav {
+    position: sticky; top: 0; z-index: 100; background: var(--white);
+    border-bottom: 1px solid var(--border); padding: 14px 18px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--red); letter-spacing: 2px; }
+  .cart-badge {
+    cursor: pointer; background: var(--red); color: white; border: none;
+    border-radius: 20px; padding: 6px 14px 6px 10px; font-size: 13px; font-weight: 500;
+    display: flex; align-items: center; gap: 5px; font-family: 'DM Sans', sans-serif;
+  }
+  .cart-badge svg { width: 16px; height: 16px; }
+
+  .page { display: none; animation: fadeIn 0.2s ease; }
+  .page.active { display: block; }
+  @keyframes fadeIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
+
+  .spinner { width: 32px; height: 32px; border: 3px solid var(--border); border-top-color: var(--red); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .hero { background: var(--red); color: white; padding: 28px 20px 24px; position: relative; overflow: hidden; }
+  .hero::after { content: 'RUIYI'; font-family: 'Playfair Display', serif; font-size: 80px; opacity: 0.08; position: absolute; right: -10px; bottom: -15px; letter-spacing: 4px; line-height: 1; }
+  .hero h1 { font-size: 22px; font-weight: 600; margin-bottom: 6px; }
+  .hero p { font-size: 14px; opacity: 0.85; line-height: 1.5; }
+
+  .section-label { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ink3); padding: 20px 18px 10px; }
+
+  .cat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 14px 100px; }
+  .cat-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 14px; cursor: pointer; transition: all 0.15s; position: relative; overflow: hidden; }
+  .cat-card:active { transform: scale(0.97); border-color: var(--red); }
+  .cat-emoji { font-size: 32px; margin-bottom: 10px; display: block; }
+  .cat-name { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 3px; }
+  .cat-sub { font-size: 12px; color: var(--ink3); }
+  .cat-arrow { position: absolute; bottom: 14px; right: 14px; width: 20px; height: 20px; background: var(--red-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--red); font-size: 12px; }
+
+  .loading-box { grid-column: 1/-1; text-align: center; padding: 60px 20px; }
+  .loading-box p { font-size: 14px; color: var(--ink3); margin-top: 14px; }
+  .error-box { grid-column: 1/-1; text-align: center; padding: 60px 20px; }
+  .error-box .ei { font-size: 40px; margin-bottom: 12px; }
+  .error-box p { font-size: 14px; color: var(--ink2); line-height: 1.6; margin-bottom: 16px; }
+  .retry-btn { border: 1.5px solid var(--red); background: white; color: var(--red); border-radius: var(--radius); padding: 10px 24px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: 'DM Sans', sans-serif; }
+
+  .page-header { background: var(--white); border-bottom: 1px solid var(--border); padding: 12px 18px; display: flex; align-items: center; gap: 10px; position: sticky; top: 57px; z-index: 50; }
+  .back-btn { width: 32px; height: 32px; border: 1px solid var(--border); border-radius: 50%; background: var(--white); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 16px; color: var(--ink); flex-shrink: 0; }
+  .page-header h2 { font-size: 16px; font-weight: 600; }
+
+  .product-list { padding: 12px 14px 120px; display: flex; flex-direction: column; gap: 10px; }
+  .product-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; display: flex; align-items: center; gap: 12px; transition: border-color 0.15s; }
+  .product-card.selected { border-color: var(--red); background: #FFFBFB; }
+  .prod-icon { width: 56px; height: 56px; background: var(--surface); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 26px; flex-shrink: 0; border: 1px solid var(--border); }
+  .prod-info { flex: 1; min-width: 0; }
+  .prod-name { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
+  .prod-spec { font-size: 12px; color: var(--ink3); margin-bottom: 8px; }
+  .qty-row { display: flex; align-items: center; gap: 6px; }
+  .qty-label { font-size: 12px; color: var(--ink2); }
+  .qty-stepper { display: flex; align-items: center; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+  .qty-btn { width: 26px; height: 26px; background: var(--surface); border: none; font-size: 16px; cursor: pointer; color: var(--ink2); font-family: 'DM Sans', sans-serif; }
+  .qty-num { width: 32px; height: 26px; border: none; border-left: 1px solid var(--border); border-right: 1px solid var(--border); text-align: center; font-size: 13px; font-weight: 600; background: var(--white); color: var(--ink); font-family: 'DM Sans', sans-serif; }
+  .qty-unit { font-size: 12px; color: var(--ink3); }
+  .check-circle { width: 24px; height: 24px; border-radius: 50%; border: 2px solid var(--border); background: var(--white); flex-shrink: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.15s; align-self: flex-start; margin-top: 2px; }
+  .check-circle.checked { background: var(--red); border-color: var(--red); color: white; font-size: 13px; }
+
+  .cart-content { padding: 14px 14px 10px; }
+  .cart-empty { text-align: center; padding: 60px 20px; color: var(--ink3); }
+  .cart-empty .empty-icon { font-size: 48px; margin-bottom: 12px; }
+  .cart-section { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 10px; overflow: hidden; }
+  .cart-section-title { font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--ink3); padding: 12px 14px; border-bottom: 1px solid var(--border); background: var(--surface); }
+  .cart-item { display: flex; align-items: center; justify-content: space-between; padding: 11px 14px; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .cart-item:last-child { border-bottom: none; }
+  .cart-item-name { color: var(--ink); font-weight: 500; flex: 1; }
+  .cart-item-qty { color: var(--red); font-weight: 600; background: var(--red-light); padding: 2px 8px; border-radius: 10px; font-size: 12px; }
+  .cart-item-del { margin-left: 10px; color: var(--ink3); cursor: pointer; font-size: 16px; }
+
+  .form-section { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; margin-bottom: 10px; }
+  .form-title { font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+  .form-field { margin-bottom: 10px; }
+  .form-field label { display: block; font-size: 12px; color: var(--ink2); margin-bottom: 5px; font-weight: 500; }
+  .form-field input, .form-field textarea { width: 100%; border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 9px 12px; font-size: 14px; font-family: 'DM Sans', sans-serif; color: var(--ink); background: var(--surface); outline: none; transition: border-color 0.15s; }
+  .form-field input:focus, .form-field textarea:focus { border-color: var(--red); }
+  .form-field textarea { height: 72px; resize: none; }
+  .required { color: var(--red); }
+
+  .submit-area { padding: 14px; padding-bottom: calc(14px + env(safe-area-inset-bottom)); }
+  .submit-btn { width: 100%; background: var(--red); color: white; border: none; border-radius: var(--radius); padding: 15px; font-size: 15px; font-weight: 600; font-family: 'DM Sans', sans-serif; cursor: pointer; }
+  .submit-btn:disabled { background: var(--ink3); cursor: not-allowed; }
+  .submit-note { text-align: center; font-size: 12px; color: var(--ink3); margin-top: 8px; }
+
+  .bottom-nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px; background: var(--white); border-top: 1px solid var(--border); display: flex; padding: 8px 0 calc(8px + env(safe-area-inset-bottom)); z-index: 100; }
+  .nav-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; cursor: pointer; padding: 4px 0; font-size: 11px; color: var(--ink3); font-weight: 500; position: relative; }
+  .nav-item.active { color: var(--red); }
+  .nav-item svg { width: 22px; height: 22px; }
+  .nav-dot { position: absolute; top: 2px; right: calc(50% - 18px); width: 8px; height: 8px; background: var(--red); border-radius: 50%; display: none; }
+  .nav-dot.show { display: block; }
+
+  .success-wrap { display: none; text-align: center; padding: 60px 30px; }
+  .success-wrap.show { display: block; }
+  .success-icon { font-size: 56px; margin-bottom: 16px; }
+  .success-title { font-size: 20px; font-weight: 700; font-family: 'Playfair Display', serif; color: var(--red); margin-bottom: 8px; }
+  .success-sub { font-size: 14px; color: var(--ink2); line-height: 1.6; margin-bottom: 24px; }
+  .success-back { border: 1.5px solid var(--red); background: white; color: var(--red); border-radius: var(--radius); padding: 12px 28px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: 'DM Sans', sans-serif; }
+
+  .toast { position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--ink); color: white; padding: 10px 20px; border-radius: 20px; font-size: 13px; opacity: 0; transition: all 0.25s; z-index: 999; pointer-events: none; white-space: nowrap; }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+</style>
+</head>
+<body>
+
+<div class="top-nav">
+  <div class="logo">RUIYI</div>
+  <button class="cart-badge" onclick="showPage('cart')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+    清单 <span id="cartCount">0</span>
+  </button>
+</div>
+
+<div class="page active" id="page-home">
+  <div class="hero">
+    <h1>RUIYI 产品目录</h1>
+    <p>浏览各系列产品，勾选心仪款式<br>一键提交您的需求清单</p>
+  </div>
+  <div class="section-label">全部系列</div>
+  <div id="catGrid" class="cat-grid">
+    <div class="loading-box"><div class="spinner"></div><p>加载产品数据中...</p></div>
+  </div>
+</div>
+
+<div class="page" id="page-products">
+  <div class="page-header">
+    <button class="back-btn" onclick="showPage('home')">‹</button>
+    <h2 id="cat-title">系列产品</h2>
+  </div>
+  <div class="product-list" id="productList"></div>
+</div>
+
+<div class="page" id="page-cart">
+  <div class="page-header">
+    <button class="back-btn" onclick="showPage('home')">‹</button>
+    <h2>我的需求清单</h2>
+  </div>
+  <div id="cartEmpty" class="cart-empty" style="display:none">
+    <div class="empty-icon">📋</div>
+    <p>还没有选择任何产品<br>去浏览系列产品吧</p>
+  </div>
+  <div id="cartMain">
+    <div class="cart-content" id="cartItems"></div>
+    <div style="padding:0 14px">
+      <div class="form-section">
+        <div class="form-title">您的联系信息</div>
+        <div class="form-field"><label>姓名 <span class="required">*</span></label><input type="text" id="f-name" placeholder="请输入您的姓名"></div>
+        <div class="form-field"><label>联系电话 <span class="required">*</span></label><input type="tel" id="f-phone" placeholder="请输入手机号码"></div>
+        <div class="form-field"><label>公司名称</label><input type="text" id="f-company" placeholder="请输入公司名称（选填）"></div>
+        <div class="form-field"><label>备注说明</label><textarea id="f-note" placeholder="如有特殊要求，请在此填写（选填）"></textarea></div>
+      </div>
+    </div>
+    <div class="submit-area">
+      <button class="submit-btn" onclick="submitForm()">提交需求清单</button>
+      <div class="submit-note">提交后我们会尽快与您联系</div>
+    </div>
+  </div>
+  <div class="success-wrap" id="successWrap">
+    <div class="success-icon">✅</div>
+    <div class="success-title">提交成功！</div>
+    <div class="success-sub">感谢您的关注，我们已收到您的需求清单<br>我们的销售人员会尽快与您联系</div>
+    <button class="success-back" onclick="resetAndHome()">继续浏览产品</button>
+  </div>
+</div>
+
+<div class="bottom-nav">
+  <div class="nav-item active" id="nav-home" onclick="showPage('home')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+    首页
+  </div>
+  <div class="nav-item" id="nav-cart" onclick="showPage('cart')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+    需求清单
+    <div class="nav-dot" id="navDot"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ============================================================
+// ⬇️ 填入你的配置（按下方步骤教程操作后填写）
+const SHEET_ID    = 'YOUR_SHEET_ID';   // Google 表格 ID
+const FORMSPREE_ID = 'email';  // Formspree 表单 ID
+// ============================================================
+
+// 系列名称 → emoji 对应表（可自由增减）
+const EMOJI_MAP = {
+  '制冰机': '🧊', '烤箱': '🫓', '破壁机': '🥤',
+  '电饭煲': '🍚', '电烤炉': '🔥', '其他': '✨',
+};
+
+let categories = {};
+let cart = {};
+
+// ===== 从 Google 表格加载产品数据 =====
+async function loadProducts() {
+  document.getElementById('catGrid').innerHTML =
+    '<div class="loading-box"><div class="spinner"></div><p>加载产品数据中...</p></div>';
+
+  const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=产品`;
+  try {
+    const res  = await fetch(url);
+    const text = await res.text();
+    const json = JSON.parse(text.substring(47, text.length - 2));
+
+    categories = {};
+    (json.table.rows || []).forEach(row => {
+      const c = row.c;
+      if (!c || !c[0] || !c[0].v) return;
+      const series = String(c[0].v).trim();
+      const name   = c[1] && c[1].v ? String(c[1].v).trim() : '';
+      const spec   = c[2] && c[2].v ? String(c[2].v).trim() : '';
+      if (!name) return;
+      if (!categories[series]) categories[series] = { name: series, products: [] };
+      categories[series].products.push({ id: series + '_' + name, name, spec });
+    });
+
+    renderHome();
+  } catch(e) {
+    document.getElementById('catGrid').innerHTML =
+      `<div class="error-box">
+        <div class="ei">⚠️</div>
+        <p>产品数据加载失败<br>请确认表格ID正确且已设置为公开</p>
+        <button class="retry-btn" onclick="loadProducts()">重新加载</button>
+      </div>`;
+  }
+}
+
+function renderHome() {
+  const cats = Object.entries(categories);
+  if (!cats.length) {
+    document.getElementById('catGrid').innerHTML =
+      '<div class="error-box"><div class="ei">📭</div><p>表格中暂无产品数据</p></div>';
+    return;
+  }
+  document.getElementById('catGrid').innerHTML = cats.map(([key, cat]) => {
+    const em = EMOJI_MAP[key] || '📦';
+    return `<div class="cat-card" onclick="showCategory('${key}')">
+      <span class="cat-emoji">${em}</span>
+      <div class="cat-name">${cat.name}系列</div>
+      <div class="cat-sub">${cat.products.length}款产品</div>
+      <div class="cat-arrow">›</div>
+    </div>`;
+  }).join('');
+}
+
+// ===== 页面切换 =====
+function showPage(p) {
+  document.querySelectorAll('.page').forEach(el => el.classList.remove('active'));
+  document.getElementById('page-' + p).classList.add('active');
+  document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+  const nav = document.getElementById('nav-' + (p === 'products' ? 'home' : p));
+  if (nav) nav.classList.add('active');
+  window.scrollTo(0, 0);
+  if (p === 'cart') renderCart();
+}
+
+function showCategory(key) {
+  const cat = categories[key];
+  const em  = EMOJI_MAP[key] || '📦';
+  document.getElementById('cat-title').textContent = cat.name + '系列';
+  document.getElementById('productList').innerHTML = cat.products.map(p => {
+    const inCart = cart[p.id];
+    const qty = inCart ? inCart.qty : 1;
+    return `<div class="product-card ${inCart ? 'selected' : ''}" id="card-${p.id}">
+      <div class="prod-icon">${em}</div>
+      <div class="prod-info">
+        <div class="prod-name">${p.name}</div>
+        <div class="prod-spec">${p.spec}</div>
+        <div class="qty-row">
+          <span class="qty-label">需求量</span>
+          <div class="qty-stepper">
+            <button class="qty-btn" onclick="changeQty('${p.id}',-1)">−</button>
+            <input class="qty-num" type="number" id="qty-${p.id}" value="${qty}" min="1" readonly>
+            <button class="qty-btn" onclick="changeQty('${p.id}',1)">+</button>
+          </div>
+          <span class="qty-unit">件</span>
+        </div>
+      </div>
+      <div class="check-circle ${inCart ? 'checked' : ''}" id="chk-${p.id}"
+        onclick="toggleProduct('${p.id}','${p.name.replace(/'/g,"\\'")}','${key}')">
+        ${inCart ? '✓' : ''}
+      </div>
+    </div>`;
+  }).join('');
+  showPage('products');
+}
+
+// ===== 产品勾选 =====
+function toggleProduct(id, name, key) {
+  if (cart[id]) {
+    delete cart[id];
+    document.getElementById('chk-' + id).className = 'check-circle';
+    document.getElementById('chk-' + id).innerHTML = '';
+    document.getElementById('card-' + id).classList.remove('selected');
+    showToast('已从清单移除');
+  } else {
+    const qty = parseInt(document.getElementById('qty-' + id).value) || 1;
+    cart[id] = { name, qty, key };
+    document.getElementById('chk-' + id).className = 'check-circle checked';
+    document.getElementById('chk-' + id).innerHTML = '✓';
+    document.getElementById('card-' + id).classList.add('selected');
+    showToast('已加入清单 ✓');
+  }
+  updateBadge();
+}
+
+function changeQty(id, d) {
+  const inp = document.getElementById('qty-' + id);
+  const v = Math.max(1, (parseInt(inp.value) || 1) + d);
+  inp.value = v;
+  if (cart[id]) { cart[id].qty = v; updateBadge(); }
+}
+
+function updateBadge() {
+  const n = Object.keys(cart).length;
+  document.getElementById('cartCount').textContent = n;
+  document.getElementById('navDot').classList.toggle('show', n > 0);
+}
+
+// ===== 渲染清单 =====
+function renderCart() {
+  const keys = Object.keys(cart);
+  document.getElementById('successWrap').classList.remove('show');
+  if (!keys.length) {
+    document.getElementById('cartEmpty').style.display = 'block';
+    document.getElementById('cartMain').style.display = 'none';
+    return;
+  }
+  document.getElementById('cartEmpty').style.display = 'none';
+  document.getElementById('cartMain').style.display = 'block';
+
+  const byCat = {};
+  keys.forEach(id => {
+    const item = cart[id];
+    if (!byCat[item.key]) byCat[item.key] = [];
+    byCat[item.key].push({ id, ...item });
+  });
+
+  document.getElementById('cartItems').innerHTML = Object.entries(byCat).map(([key, items]) =>
+    `<div class="cart-section">
+      <div class="cart-section-title">${EMOJI_MAP[key]||'📦'} ${key}系列</div>
+      ${items.map(it => `<div class="cart-item">
+        <span class="cart-item-name">${it.name}</span>
+        <span class="cart-item-qty">× ${it.qty}件</span>
+        <span class="cart-item-del" onclick="removeCart('${it.id}')">✕</span>
+      </div>`).join('')}
+    </div>`
+  ).join('');
+}
+
+function removeCart(id) { delete cart[id]; updateBadge(); renderCart(); }
+
+// ===== 提交 =====
+async function submitForm() {
+  const name  = document.getElementById('f-name').value.trim();
+  const phone = document.getElementById('f-phone').value.trim();
+  if (!name)  { showToast('请填写您的姓名'); return; }
+  if (!phone) { showToast('请填写联系电话'); return; }
+  if (!Object.keys(cart).length) { showToast('请先选择产品'); return; }
+
+  const btn = document.querySelector('.submit-btn');
+  btn.disabled = true; btn.textContent = '提交中...';
+
+  const listText = Object.values(cart).map(i => `${i.name} × ${i.qty}件`).join('\n');
+
+  try {
+    const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({
+        姓名: name, 电话: phone,
+        公司: document.getElementById('f-company').value.trim() || '（未填写）',
+        备注: document.getElementById('f-note').value.trim() || '（无）',
+        需求清单: listText,
+      })
+    });
+    if (res.ok) {
+      document.getElementById('cartMain').style.display = 'none';
+      document.getElementById('cartEmpty').style.display = 'none';
+      document.getElementById('successWrap').classList.add('show');
+    } else {
+      showToast('提交失败，请稍后重试');
+      btn.disabled = false; btn.textContent = '提交需求清单';
+    }
+  } catch(e) {
+    showToast('网络错误，请检查后重试');
+    btn.disabled = false; btn.textContent = '提交需求清单';
+  }
+}
+
+function resetAndHome() {
+  cart = {}; updateBadge();
+  ['f-name','f-phone','f-company','f-note'].forEach(id => document.getElementById(id).value = '');
+  showPage('home');
+}
+
+let _tt;
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(_tt); _tt = setTimeout(() => t.classList.remove('show'), 2000);
+}
+
+loadProducts();
+</script>
+</body>
+</html>
