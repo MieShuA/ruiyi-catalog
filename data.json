@@ -1,0 +1,1135 @@
+{
+  "series": [
+    {
+      "name": "制冰机",
+      "img": "https://MieShuA.github.io/ruiyi-catalog/images/制冰机.png",
+      "products": [
+        {
+          "name": "子弹冰SJ-B09P",
+          "desc": "单次制冰6-10min 按键控制，可调节大小冰，电源、冰满/缺水提示",
+          "specs": [
+            {
+              "name": "白色9颗冰",
+              "desc": "储水量：1.4L\n日产冰量：15KG\n产品尺寸：280*220*270mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/SJ-B09白.jpg"
+            },
+            {
+              "name": "红色9颗冰",
+              "desc": "储水量：1.2L\n日产冰量：15KG\n产品尺寸：280*220*270mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/SJ-B09红.jpg"
+            },
+            {
+              "name": "黑色9颗冰",
+              "desc": "储水量：1.2L\n日产冰量：15KG\n产品尺寸：280*220*270mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/SJ-B09黑.jpg"
+            }
+          ]
+        },
+        {
+          "name": "子弹冰ZSW-ZB09",
+          "desc": "单次制冰6-10min 电源、自动清洁、待定",
+          "specs": [
+            {
+              "name": "白色9颗冰",
+              "desc": "储水量：1.4L\n日产冰量：12KG\n产品尺寸：330*223*290mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB09白.jpg"
+            }
+          ]
+        },
+        {
+          "name": "子弹冰ZSW-ZB10",
+          "desc": "单次制冰6-10min 单次制冰6-10min 电源、自动清洁、待定",
+          "specs": [
+            {
+              "name": "黑色9颗冰",
+              "desc": "储水量：1.2L\n日产冰量：12KG\n产品尺寸：215*292*290mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB10黑.png"
+            },
+            {
+              "name": "银色不锈钢9颗冰",
+              "desc": "储水量：1.2L\n日产冰量：12KG\n产品尺寸：215*292*290mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB10不锈钢.png"
+            }
+          ]
+        },
+        {
+          "name": "子弹冰ZSW-ZB11",
+          "desc": "单次制冰6-10min 电源、冰满提示、缺水提示、自动清洁",
+          "specs": [
+            {
+              "name": "黑色9颗冰",
+              "desc": "储水量：1.4L\n日产冰量：12KG\n产品尺寸：210*310*320mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB11.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "子弹冰ZSW-ZB12",
+          "desc": "单次制冰6-10min 电源、冰满提示、缺水提示、自动清洁",
+          "specs": [
+            {
+              "name": "枪灰色9颗冰",
+              "desc": "储水量：1.4L\n日产冰量：12KG\n产品尺寸：220*310*325mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB12枪灰色.png"
+            },
+            {
+              "name": "蓝色9颗冰",
+              "desc": "储水量：1.4L\n日产冰量：12KG\n产品尺寸：220*310*325mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB12蓝.jpg"
+            }
+          ]
+        },
+        {
+          "name": "子弹冰ZSW-ZB13",
+          "desc": "单次制冰6-10min 电源、冰满提示、缺水提示、自动清洁",
+          "specs": [
+            {
+              "name": "枪灰色9颗冰",
+              "desc": "储水量：1.4L\n日产冰量：12KG\n产品尺寸：235*305*302mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB13枪灰.png"
+            }
+          ]
+        },
+        {
+          "name": "子弹冰ZSW-ZB14",
+          "desc": "单次制冰6-10min 双旋钮款，可调节大小冰，电源、冰满/缺水提示",
+          "specs": [
+            {
+              "name": "白色9颗冰",
+              "desc": "储水量：1.2L\n日产冰量：12KG\n产品尺寸：235*305*295mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB14白.jpg"
+            },
+            {
+              "name": "黑色9颗冰",
+              "desc": "储水量：1.2L\n日产冰量：12KG\n产品尺寸：235*305*295mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB14黑.jpg"
+            },
+            {
+              "name": "芥末绿9颗冰",
+              "desc": "储水量：1.2L\n日产冰量：12KG\n产品尺寸：235*305*295mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB14芥末绿.jpg"
+            },
+            {
+              "name": "樱花粉9颗冰",
+              "desc": "储水量：1.2L\n日产冰量：12KG\n产品尺寸：235*305*295mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB14樱花粉.jpg"
+            }
+          ]
+        },
+        {
+          "name": "子弹冰ZSW-ZB20",
+          "desc": "单次制冰6-10min 手动加水/外置净水机\n超大屏钢化玻璃UI动态智能动感显示屏，旋钮显示， 电源/冰满提示/缺水提示/厚冰/薄冰/预约，三合一体机（冰块/冰水/冰沙）",
+          "specs": [
+            {
+              "name": "枪灰色12颗冰",
+              "desc": "储水量：1.5L\n日产冰量：15KG\n产品尺寸：460*300*470mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB20枪灰.jpg"
+            },
+            {
+              "name": "白色12颗冰",
+              "desc": "储水量：1.5L\n日产冰量：15KG\n产品尺寸：460*300*470mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB20白.jpg"
+            }
+          ]
+        },
+        {
+          "name": "子弹冰ZSW-ZB21",
+          "desc": "单次制冰6-10min 超大屏钢化玻璃UI动态智能动感显示屏，导电彩膜， 电源/冰满提示/缺水提示/厚冰/薄冰/预约，三合一体机（冰块/冰水/冰沙）",
+          "specs": [
+            {
+              "name": "枪灰色12颗冰",
+              "desc": "储水量：1.5L\n日产冰量：15KG\n产品尺寸：460*300*470mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB21枪灰.jpg"
+            },
+            {
+              "name": "白色12颗冰",
+              "desc": "储水量：1.5L\n日产冰量：15KG\n产品尺寸：460*300*470mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB21白.jpg"
+            }
+          ]
+        },
+        {
+          "name": "子弹冰YH16",
+          "desc": "单次制冰6-10min 按键控制，可调节大小冰，电源、冰满/缺水提示",
+          "specs": [
+            {
+              "name": "白色9颗冰",
+              "desc": "储水量：1.4L\n日产冰量：12KG\n产品尺寸：225*294*285mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/YH16白.jpg"
+            },
+            {
+              "name": "不锈钢9颗冰",
+              "desc": "储水量：1.4L\n日产冰量：12KG\n产品尺寸：225*294*285mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/YH16不锈钢.jpg"
+            },
+            {
+              "name": "黑色9颗冰",
+              "desc": "储水量：1.4L\n日产冰量：12KG\n产品尺寸：225*294*285mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/YH16黑.jpg"
+            }
+          ]
+        },
+        {
+          "name": "方块冰ZSW-ZB15",
+          "desc": "单次制冰10-15min UI液晶大屏动感显示屏，导电彩膜，电源/冰满提示/缺水提示/自动清洁/厚冰/薄冰/预约",
+          "specs": [
+            {
+              "name": "白色12颗冰",
+              "desc": "储水量：1.5L（可外连桶装水）\n日产冰量：16KG\n产品尺寸：307*237*314mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB15白.jpg"
+            },
+            {
+              "name": "芥末绿12颗冰",
+              "desc": "储水量：1.5L（可外连桶装水）\n日产冰量：16KG\n产品尺寸：307*237*314mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB15芥末绿.jpg"
+            },
+            {
+              "name": "枪灰色12颗冰",
+              "desc": "储水量：1.5L（可外连桶装水）\n日产冰量：16KG\n产品尺寸：307*237*314mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB15枪灰.jpg"
+            },
+            {
+              "name": "樱花粉12颗冰",
+              "desc": "储水量：1.5L（可外连桶装水）\n日产冰量：16KG\n产品尺寸：307*237*314mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB15樱花粉.jpg"
+            }
+          ]
+        },
+        {
+          "name": "方块冰ZSW-ZB16",
+          "desc": "单次制冰10-15min 单次制冰6-10min UI动态大屏显示屏，高档彩膜，电源/冰满提示/缺水提示/自动清洁/厚冰/薄冰/预约",
+          "specs": [
+            {
+              "name": "白色12颗冰",
+              "desc": "储水量：1.5L\n日产冰量：16KG\n产品尺寸：307*237*383mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB16白.jpg"
+            },
+            {
+              "name": "芥末绿12颗冰",
+              "desc": "储水量：1.5L\n日产冰量：16KG\n产品尺寸：307*237*383mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB16芥末绿.jpg"
+            },
+            {
+              "name": "枪灰色12颗冰",
+              "desc": "储水量：1.5L\n日产冰量：16KG\n产品尺寸：307*237*383mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB16枪灰.jpg"
+            }
+          ]
+        },
+        {
+          "name": "方块冰ZSW-ZB17",
+          "desc": "单次制冰10-15min UI动态大屏显示屏，电源/冰满提示/缺水提示/自动清洁/厚冰/薄冰/预约",
+          "specs": [
+            {
+              "name": "白色12颗冰",
+              "desc": "储水量：1.5L（可外连桶装水小桶）\n日产冰量：16KG\n产品尺寸：307*237*320mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB17白.jpg"
+            },
+            {
+              "name": "芥末绿12颗冰",
+              "desc": "储水量：1.5L（可外连桶装水小桶）\n日产冰量：16KG\n产品尺寸：307*237*320mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB17芥末绿.jpg"
+            },
+            {
+              "name": "枪灰色12颗冰",
+              "desc": "储水量：1.5L（可外连桶装水小桶）\n日产冰量：16KG\n产品尺寸：307*237*320mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB17枪灰.jpg"
+            },
+            {
+              "name": "樱花粉12颗冰",
+              "desc": "储水量：1.5L（可外连桶装水小桶）\n日产冰量：16KG\n产品尺寸：307*237*320mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-ZB17樱花粉.jpg"
+            }
+          ]
+        },
+        {
+          "name": "方块冰YH820",
+          "desc": "单次制冰14min 电源/冰满提示/缺水提示/自动清洁",
+          "specs": [
+            {
+              "name": "白色24颗冰",
+              "desc": "储水量：1.6L\n日产冰量：12.5KG\n产品尺寸：217*322*413mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/YH820白.jpg"
+            },
+            {
+              "name": "黑色24颗冰",
+              "desc": "储水量：1.6L\n日产冰量：12.5KG\n产品尺寸：217*322*413mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/YH820黑.jpg"
+            }
+          ]
+        },
+        {
+          "name": "咀嚼冰YH4028",
+          "desc": "单次制冰6-10min 电源、冰满提示、缺水提示、自动清洁",
+          "specs": [
+            {
+              "name": "银色不锈钢",
+              "desc": "储水量：1.5L\n日产冰量：17KG\n产品尺寸：246*311*399.5mm，75*170*397mm（侧水箱）",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/YH4028灰.jpg"
+            }
+          ]
+        },
+        {
+          "name": "圆球冰YH1599",
+          "desc": "单次制冰35-55min 按键控制，可调节大小冰，电源、冰满/缺水提示、自动清洁",
+          "specs": [
+            {
+              "name": "黑色2颗",
+              "desc": "储水量：1.2L\n日产冰量：42pcs/2.3kg，72pcs / 4.1kg\n产品尺寸：254x445x412mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/YH1599黑.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "烤箱",
+      "img": "https://MieShuA.github.io/ruiyi-catalog/images/烤箱.png",
+      "products": [
+        {
+          "name": "燃气烤箱LZ-FD998",
+          "desc": "可使用丁烷气罐，可连接瓦斯罐",
+          "specs": [
+            {
+              "name": "灰色常规款",
+              "desc": "产品重量：8.9kg\n产品尺寸：495*375*385mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/LZ-FD998灰.jpg"
+            },
+            {
+              "name": "绿色常规款",
+              "desc": "产品重量：8.9kg\n产品尺寸：495*375*385mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/LZ-FD998绿.jpg"
+            },
+            {
+              "name": "橙色定制款",
+              "desc": "产品重量：8.9kg\n产品尺寸：495*375*385mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/LZ-FD998橙.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "电压力锅",
+      "img": "https://MieShuA.github.io/ruiyi-catalog/images/电压力锅.png",
+      "products": [
+        {
+          "name": "RHD601",
+          "desc": "220V，6L/1000W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "220V，6L/1000W；\n内胆：单喷6L/510g，正负15g；",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/RHD601.png"
+            }
+          ]
+        },
+        {
+          "name": "RHD602",
+          "desc": "220V，6L/1003W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "220V，6L/1000W；\n内胆：单喷6L/510g，正负15g；",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/RHD602.png"
+            }
+          ]
+        },
+        {
+          "name": "RHD603",
+          "desc": "220V，6L/1002W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "220V，6L/1000W；\n内胆：单喷6L/510g，正负15g；",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/RHD603.png"
+            }
+          ]
+        },
+        {
+          "name": "RHD647",
+          "desc": "220V，6L/1004W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "220V，6L/1000W；\n内胆：单喷6L/510g，正负15g；",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/RHD647.png"
+            }
+          ]
+        },
+        {
+          "name": "RHD648",
+          "desc": "220V，6L/1001W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "220V，6L/1000W；\n内胆：单喷6L/510g，正负15g；",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/RHD648.png"
+            }
+          ]
+        },
+        {
+          "name": "RHD687",
+          "desc": "220V，6L/1005W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "220V，6L/1000W；\n内胆：单喷6L/510g，正负15g；",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/RHD687.png"
+            }
+          ]
+        },
+        {
+          "name": "RHD689",
+          "desc": "220V，6L/1006W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "220V，6L/1000W；\n内胆：单喷6L/510g，正负15g；",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/RHD689.png"
+            }
+          ]
+        },
+        {
+          "name": "RHD690",
+          "desc": "220V，6L/1007W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "220V，6L/1000W；\n内胆：单喷6L/510g，正负15g；",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/RHD690.png"
+            }
+          ]
+        },
+        {
+          "name": "RHD691",
+          "desc": "220V，6L/1008W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "220V，6L/1000W；\n内胆：单喷6L/510g，正负15g；",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/RHD691.png"
+            }
+          ]
+        },
+        {
+          "name": "RH-401D",
+          "desc": "智能面板触摸按键\n4L-220V-240V /800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：智能面板触摸按键\n容量：4L\n电压/功率：220V-240V  800W",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/RH-401D 501D 601D.png"
+            }
+          ]
+        },
+        {
+          "name": "RH-501D",
+          "desc": "智能面板触摸按键\n5L-220V-240V /800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：智能面板触摸按键\n容量：5L\n电压/功率：220V-240V  800W",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/RH-401D 501D 601D.png"
+            }
+          ]
+        },
+        {
+          "name": "RH-601D",
+          "desc": "智能面板触摸按键\n6L-220V-240V /1000W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：智能面板触摸按键\n容量：6L\n电压/功率：220V-240V  1000W",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/RH-401D 501D 601D.png"
+            }
+          ]
+        },
+        {
+          "name": "RH-401H",
+          "desc": "智能面板触摸按键\n4L-220V-240V /800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：智能面板触摸按键\n容量：4L\n电压/功率：220V-240V  800W",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/RH-401H 501H 601H.png"
+            }
+          ]
+        },
+        {
+          "name": "RH-501H",
+          "desc": "智能面板触摸按键\n5L-220V-240V /900W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：智能面板触摸按键\n容量：5L\n电压/功率：220V-240V  900W",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/RH-401H 501H 601H.png"
+            }
+          ]
+        },
+        {
+          "name": "RH-601H",
+          "desc": "智能面板触摸按键\n6L-220V-240V /1000W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：智能面板触摸按键\n容量：6L\n电压/功率：220V-240V  1000W",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/RH-401H 501H 601H.png"
+            }
+          ]
+        },
+        {
+          "name": "GD-80D",
+          "desc": "8L/1300W\n国标双喷石墨烯胆",
+          "specs": [
+            {
+              "name": "磨砂钢",
+              "desc": "8L/1300W\n国标双喷石墨烯胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/GD-80D磨砂.png"
+            },
+            {
+              "name": "古铜色",
+              "desc": "8L/1300W\n国标双喷石墨烯胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/GD-80D古铜.png"
+            }
+          ]
+        },
+        {
+          "name": "GD-100D",
+          "desc": "10L/1350W\n国标双喷石墨烯胆",
+          "specs": [
+            {
+              "name": "磨砂钢",
+              "desc": "10/1350W\n国标双喷石墨烯胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/GD-100D磨砂.png"
+            },
+            {
+              "name": "古铜色",
+              "desc": "10/1350W\n国标双喷石墨烯胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/GD-100D古铜.png"
+            }
+          ]
+        },
+        {
+          "name": "GD-120D",
+          "desc": "12L/1600W\n国标双喷石墨烯胆",
+          "specs": [
+            {
+              "name": "磨砂钢",
+              "desc": "12L/1600W\n国标双喷石墨烯胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/GD-120D磨砂.png"
+            },
+            {
+              "name": "古铜色",
+              "desc": "12L/1600W\n国标双喷石墨烯胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/GD-120D古铜.png"
+            }
+          ]
+        },
+        {
+          "name": "GD-150D\nGD-170D",
+          "desc": "15L/17L-1900W\n国标双喷石墨烯胆",
+          "specs": [
+            {
+              "name": "磨砂钢",
+              "desc": "15L-17L/1900W\n国标双喷石墨烯胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/GD-150D170D210D260D330D400D450D550D650D.png"
+            }
+          ]
+        },
+        {
+          "name": "GD-210D",
+          "desc": "21L/2500W\n国标双喷黄晶胆",
+          "specs": [
+            {
+              "name": "磨砂钢",
+              "desc": "21L/2500W\n国标双喷黄晶胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/GD-150D170D210D260D330D400D450D550D650D.png"
+            }
+          ]
+        },
+        {
+          "name": "GD-260D\nGD-330D\nGD-400D\nGD-450D\nGD-550D\nGD-650D",
+          "desc": "26L/33L/40L/45L/55L/65L-3500W\n国标双喷黄晶胆",
+          "specs": [
+            {
+              "name": "磨砂钢",
+              "desc": "26L/33L/40L/45L/55L/65L-3500W\n国标双喷黄晶胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/GD-150D170D210D260D330D400D450D550D650D.png"
+            }
+          ]
+        },
+        {
+          "name": "HY-20C",
+          "desc": "镭雕面板触摸按键，双喷内黑外古铜内胆\n2L-220V/400W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：镭雕面板触摸按键\n容量：2L\n电压/功率：220V/400W\n内胆：双喷内黑外古铜内胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-20C.png"
+            }
+          ]
+        },
+        {
+          "name": "HY-20CA",
+          "desc": "镭雕面板触摸按键 双喷水性油内胆\n2L-220V/400W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：镭雕面板触摸按键\n容量：2L\n电压/功率：220V/400W\n内胆：双喷水性油内胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-20CA.png"
+            }
+          ]
+        },
+        {
+          "name": "HY-30K",
+          "desc": "镭雕面板触摸按键 双喷水性油内胆\n3L-220V/600W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：镭雕面板触摸按键\n容量：3L\n电压/功率：220V/600W\n内胆：双喷水性油内胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-30K.png"
+            }
+          ]
+        },
+        {
+          "name": "HY-16L",
+          "desc": "镭雕面板触摸按键 双喷水性油内胆\n1.6L-220V/400W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：镭雕面板触摸按键\n容量：1.6L\n电压/功率：220V/400W\n内胆：双喷水性油内胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-16L.png"
+            }
+          ]
+        },
+        {
+          "name": "HY-16M-A",
+          "desc": "镭雕面板触摸按键 双喷水性油内胆\n1.6L-220V/400W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：镭雕面板触摸按键\n容量：1.6L\n电压/功率：220V/400W\n内胆：双喷水性油内胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-16M-A.png"
+            }
+          ]
+        },
+        {
+          "name": "HY-30I",
+          "desc": "镭雕面板触摸按键 双喷水性油内胆\n3L-220V/600W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：镭雕面板触摸按键\n容量：3L\n电压/功率：220V/600W\n内胆：双喷水性油内胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-30I.png"
+            }
+          ]
+        },
+        {
+          "name": "HY-30XP",
+          "desc": "镭雕面板触摸按键 双喷水性油内胆\n3L-220V/605W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：镭雕面板触摸按键\n容量：3L\n电压/功率：220V/605W\n内胆：双喷水性油内胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-30XP.png"
+            }
+          ]
+        },
+        {
+          "name": "HY-30X",
+          "desc": "镭雕面板触摸按键 双喷水性油内胆\n3L-220V/605W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：镭雕面板触摸按键\n容量：3L\n电压/功率：220V/605W\n内胆：双喷水性油内胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-30X.png"
+            }
+          ]
+        },
+        {
+          "name": "HY-30XR",
+          "desc": "镭雕面板触摸按键 双喷水性油内胆\n3L-220V/605W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：镭雕面板触摸按键\n容量：3L\n电压/功率：220V/605W\n内胆：双喷水性油内胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-30XR.png"
+            }
+          ]
+        },
+        {
+          "name": "HY-20D",
+          "desc": "镭雕面板触摸按键 双喷水性油内胆\n3L-220V/605W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：镭雕面板触摸按键\n容量：3L\n电压/功率：220V/400W\n内胆：双喷水性油内胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-20D.png"
+            }
+          ]
+        },
+        {
+          "name": "HY-405D",
+          "desc": "镭雕面板触摸按键 双喷水性油内胆\n4L-220V/900W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：镭雕面板触摸按键\n容量：4L\n电压/功率：220V/900W\n内胆：双喷水性油内胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-405D.png"
+            }
+          ]
+        },
+        {
+          "name": "HY-407",
+          "desc": "镭雕面板触摸按键 双喷水性油内胆\n4L-220V/900W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：镭雕面板触摸按键\n容量：4L\n电压/功率：220V/900W\n内胆：双喷水性油内胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-407.png"
+            }
+          ]
+        },
+        {
+          "name": "HY-505D",
+          "desc": "镭雕面板触摸按键 双喷水性油内胆\n5L-220V/900W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "控制方式：智能面板触摸按键\n容量：5L\n电压/功率：220V/900W\n内胆：双喷水性油内胆",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-505D.jpeg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "破壁机",
+      "img": "https://MieShuA.github.io/ruiyi-catalog/images/破壁机.png",
+      "products": [
+        {
+          "name": "HY-P1903D-H",
+          "desc": "28000转/分钟\nLED显示屏+高硼硅酸盐玻璃杯\n1.75L-110V /800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "28000转/分钟\nLED显示屏+高硼硅酸盐玻璃杯\n容量：1.75L\n电压/功率：110V /800W",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-P1903D-H.png"
+            }
+          ]
+        },
+        {
+          "name": "HY-P1903D-L",
+          "desc": "28000转/分钟\nLED显示屏+PP杯\n2L-110V /1200W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "28000转/分钟\nLED显示屏+PP杯\n容量：2L\n电压/功率：110V /1200W",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-P1903D-L.png"
+            }
+          ]
+        },
+        {
+          "name": "HY-P2002D-H",
+          "desc": "28000转/分钟\nLED显示屏+高硼硅酸盐玻璃杯\n1.75L-110V /800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "28000转/分钟\nLED显示屏+高硼硅酸盐玻璃杯\n容量：1.75L\n电压/功率：110V /800W",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-P2002D-H.png"
+            }
+          ]
+        },
+        {
+          "name": "HY-1904D-H",
+          "desc": "28000转/分钟\nLED显示屏+高硼硅酸盐玻璃杯\n1.75L-110V /800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "28000转/分钟\nLED显示屏+高硼硅酸盐玻璃杯\n容量：1.75L\n电压/功率：110V /800W",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-P1904D-H.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "水壶",
+      "img": "https://MieShuA.github.io/ruiyi-catalog/images/水壶.jpeg",
+      "products": [
+        {
+          "name": "LZ-17288",
+          "desc": "1.7L-220V/50Hz/1800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "食品级304不锈钢",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/LZ-17288.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "LZ-17306",
+          "desc": "1.7L-220V/50Hz/1800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "食品级304不锈钢",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/LZ-17306.png"
+            }
+          ]
+        },
+        {
+          "name": "LZ-17009",
+          "desc": "1.7L-220V/50Hz/1800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "食品级304不锈钢",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/LZ-17009.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "LZ-17159",
+          "desc": "1.7L-220V/50Hz/1800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "食品级304不锈钢",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/LZ-17159.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "LZ-17311",
+          "desc": "1.7L-220V/50Hz/1800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "食品级304不锈钢",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/LZ-17311.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "LZ-17318",
+          "desc": "1.7L-220V/50Hz/1800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "食品级304不锈钢",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/LZ-17318.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "LZ-17302",
+          "desc": "1.7L-220V/50Hz/1800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "食品级304不锈钢",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/LZ-17302.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "LZ-17305",
+          "desc": "1.7L-220V/50Hz/1800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "食品级304不锈钢",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/LZ-17305.png"
+            }
+          ]
+        },
+        {
+          "name": "LZ-17368",
+          "desc": "1.7L-220V/50Hz/1800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "食品级304不锈钢",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/LZ-17368.png"
+            }
+          ]
+        },
+        {
+          "name": "LZ-10106",
+          "desc": "1L/1.2L-220V/50Hz/1800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "食品级304不锈钢",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/LZ-10106.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "LZ-17266",
+          "desc": "1.7L-220V/50Hz/1800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "食品级玻璃+塑料外壳",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/LZ-17266.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "LZ-25BJ25",
+          "desc": "2.5L-220V/50Hz/1800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "304不锈钢+PP塑料+防烫包胶",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/LZ-25BJ25.png"
+            }
+          ]
+        },
+        {
+          "name": "LZ-25BW25",
+          "desc": "2.5L-220V/50Hz/1800W",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "304不锈钢+PP塑料+防烫包胶",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/LZ-25BW25.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "其他",
+      "img": "https://MieShuA.github.io/ruiyi-catalog/images/其他.jpg",
+      "products": [
+        {
+          "name": "解冻器HY-JD2022-03",
+          "desc": "",
+          "specs": [
+            {
+              "name": "米白色",
+              "desc": "产品重量：1.97kg\n产品尺寸：337*239*173mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-JD2022-03.png"
+            }
+          ]
+        },
+        {
+          "name": "解冻器HY-2022-01",
+          "desc": "",
+          "specs": [
+            {
+              "name": "白色",
+              "desc": "产品重量：1.97kg\n产品尺寸：311*245*151mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-2022-01白.png"
+            },
+            {
+              "name": "红色",
+              "desc": "产品重量：1.97kg\n产品尺寸：311*245*151mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-2022-01红.png"
+            },
+            {
+              "name": "绿色",
+              "desc": "产品重量：1.97kg\n产品尺寸：311*245*151mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/HY-2022-01绿.png"
+            }
+          ]
+        },
+        {
+          "name": "湿巾加热器001",
+          "desc": "24h智能恒温 夜灯显示",
+          "specs": [
+            {
+              "name": "橡皮筋基础款",
+              "desc": "产品重量：625g\n产品尺寸：225*115*135",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/湿巾加热器.jpg"
+            },
+            {
+              "name": "弹簧款",
+              "desc": "产品重量：635g\n产品尺寸：225*115*135",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/湿巾加热器.jpg"
+            },
+            {
+              "name": "弹簧+上下加热",
+              "desc": "产品重量：700g\n产品尺寸：225*115*135",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/湿巾加热器.jpg"
+            },
+            {
+              "name": "弹簧充电款+上下加热",
+              "desc": "产品重量：750g\n产品尺寸：225*115*135",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/湿巾加热器.jpg"
+            }
+          ]
+        },
+        {
+          "name": "电蒸锅001",
+          "desc": "上蒸下煮 一键火锅 12h智能预约",
+          "specs": [
+            {
+              "name": "黑色",
+              "desc": "220V 1200W\n产品重量：2.7kg\n产品尺寸：370*250*405mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/电蒸锅001.jpg"
+            }
+          ]
+        },
+        {
+          "name": "电蒸锅002",
+          "desc": "9秒速热出气 24h智能预约 安全防干烧",
+          "specs": [
+            {
+              "name": "白色",
+              "desc": "220V 800W\n产品重量：2.1kg\n产品尺寸：265x320x360mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/电蒸锅002.jpg"
+            }
+          ]
+        },
+        {
+          "name": "绞肉器MG-S13",
+          "desc": "电机：额定/锁定功率: 250/800W, 7625铜包铝\n塑料斗盘\n不锈钢十字刀*1  2片铁基刀板5/7mm\n1个食物塞棒/灌肠嘴/曲奇套件",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "电机：额定/锁定功率: 250/800W, 7625铜包铝\n产品尺寸：255*125*290mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/MG-S13.png"
+            }
+          ]
+        },
+        {
+          "name": "绞肉器MG-S9",
+          "desc": "电机：额定/锁定功率: 250/800W, 7625铜包铝\n塑料斗盘\n不锈钢十字刀*1  2片铁基刀板5/7mm\n1个食物塞棒/灌肠嘴/曲奇套件",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "电机：额定/锁定功率: 250/800W, 7625铜包铝\n产品尺寸：255*125*290mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/MG-M9.png"
+            }
+          ]
+        },
+        {
+          "name": "绞肉器MG-M2",
+          "desc": "电机：额定/锁定功率: 250/800W, 7625铜包铝\n不锈钢十字刀*1  2片铁基刀板5/7mm\n1个食物塞棒/灌肠嘴/曲奇套件",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "电机：额定/锁定功率: 250/800W, 7625铜包铝\n产品尺寸：335*150*330mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/MG-M2.png"
+            }
+          ]
+        },
+        {
+          "name": "绞肉器MG-M9",
+          "desc": "电机：额定/锁定功率: 250/800W, 7625铜包铝\n不锈钢十字刀*1  3片铁基刀板5/7/扇形\n1个食物塞棒/灌肠嘴/曲奇套件",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "电机：额定/锁定功率: 250/800W, 7625铜包铝\n产品尺寸：335*150*355mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/MG-M9.png"
+            }
+          ]
+        },
+        {
+          "name": "绞肉器MG-M10",
+          "desc": "电机：额定/锁定功率: 500/1000W, 8825铜包铝\n不锈钢十字刀*1  3片铁基刀板5/7/扇形\n1个食物塞棒/灌肠嘴/曲奇套件",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "电机：额定/锁定功率: 500/1000W, 8825铜包铝\n产品尺寸：375*180*355mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/MG-M10.png"
+            }
+          ]
+        },
+        {
+          "name": "绞肉器MG-M1",
+          "desc": "电机：额定/锁定功率: 500/1000W, 8825铜包铝\n不锈钢十字刀*1  3片铁基刀板5/7/扇形\n1个食物塞棒/灌肠嘴/曲奇套件",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "电机：额定/锁定功率: 500/1000W, 8825铜包铝\n产品尺寸：335*150*330mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/MG-M1.png"
+            }
+          ]
+        },
+        {
+          "name": "绞肉器MG-M6",
+          "desc": "电机：额定/锁定功率: 500/1000W, 8825铜包铝\n不锈钢十字刀*1  3片铁基刀板5/7/扇形\n1个食物塞棒/灌肠嘴/曲奇套件",
+          "specs": [
+            {
+              "name": "常规款",
+              "desc": "电机：额定/锁定功率: 500/1000W, 8825铜包铝\n产品尺寸：335*165*365mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/MG-M6.png"
+            }
+          ]
+        },
+        {
+          "name": "冰淇淋机YH1650",
+          "desc": "1~9档\n沙冰时间40min\n冰激凌、冰沙、啤酒、果汁、奶昔 \n自动清洁",
+          "specs": [
+            {
+              "name": "白色",
+              "desc": "220-240V~50Hz/180W\n容积：2L\n产品尺寸：200*420*404mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/YH1650白.jpg"
+            },
+            {
+              "name": "黑色",
+              "desc": "220-240V~50Hz/180W\n容积：2L\n产品尺寸：200*420*404mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/YH1650黑.jpg"
+            },
+            {
+              "name": "蓝色",
+              "desc": "220-240V~50Hz/180W\n容积：2L\n产品尺寸：200*420*404mm",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/YH1650蓝.jpg"
+            }
+          ]
+        },
+        {
+          "name": "雪花冰机ZSW-XH01",
+          "desc": "220V-240V~50/60Hz或\n110v~60Hz\n雪花状或细丝状\n制冷、清洗、缺水、故障提示及高温高压保护",
+          "specs": [
+            {
+              "name": "枪灰色",
+              "desc": "制冰时间： 1min\n制冰剂规格：R290\n冷却方式：风冷\n最大注水量：450ml/550mL\n制冰量：60KG/24H\n材质：主体ABS/接冰盒PC/注水瓶PE\n颜色：白色、蓝色和枪灰色\n产品尺寸：28.9*31.4*25.6cm\n单个净重：11.7kg",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-XH01.png"
+            }
+          ]
+        },
+        {
+          "name": "雪花冰机ZSW-XH02\n调速型",
+          "desc": "220V-240V~50/60Hz或\n110v~60Hz\n雪花状或细丝状\n制冷、清洗、缺水、故障提示及高温高压保护、24小时定时、加减调速",
+          "specs": [
+            {
+              "name": "绿色",
+              "desc": "制冰时间： 1min\n制冰剂规格：R290\n冷却方式：风冷\n最大注水量：450ml/550mL\n制冰量：60KG/24H\n材质：主体ABS/接冰盒PC/注水瓶PE\n颜色：白色、芥末绿色和枪灰色\n产品尺寸：28.9*31.4*25.6cm\n单个净重：11.7kg",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-XH02.png"
+            }
+          ]
+        },
+        {
+          "name": "雪花冰机ZSW-XH03\n调速型",
+          "desc": "220V-240V~50/60Hz或\n110v~60Hz\n雪花状或细丝状\n制冷、清洗、缺水、故障提示及高温高压保护、24小时定时、加减调速",
+          "specs": [
+            {
+              "name": "白色",
+              "desc": "制冰时间： 1min\n制冰剂规格：R290\n冷却方式：风冷\n最大注水量：1.5L\n制冰量：26KG/24H\n材质：主体ABS/接冰盒PC/注水瓶PE\n颜色：白色、芥末绿色和枪灰色\n产品尺寸：35*235*25cm\n单个净重：8kg",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-XH03.png"
+            }
+          ]
+        },
+        {
+          "name": "雪花冰机ZSW-XH04\n调速型",
+          "desc": "220V-240V~50/60Hz或\n110v~60Hz\n雪花状或细丝状\n制冷、清洗、缺水、故障提示及高温高压保护、24小时定时、加减调速",
+          "specs": [
+            {
+              "name": "银色不锈钢",
+              "desc": "制冰时间： 1min\n制冰剂规格：R290\n冷却方式：风冷\n最大注水量：1.5L\n制冰量：60KG/24H\n材质：不锈钢钣金/水箱PC\n颜色：不锈钢外壳",
+              "img": "https://MieShuA.github.io/ruiyi-catalog/images/ZSW-XH04.png"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
