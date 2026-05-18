@@ -540,6 +540,7 @@ async function submitForm() {
   const payload = {
     姓名: name,
     电话: phone,
+    邮箱: document.getElementById('f-email').value.trim() || '（未填写）',
     公司: document.getElementById('f-company').value.trim() || '（未填写）',
     备注: document.getElementById('f-note').value.trim()    || '（无）',
     需求清单: listText,
