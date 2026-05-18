@@ -169,7 +169,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink)
   <div class="logo">RUIYI</div>
   <button class="cart-badge" onclick="showPage('cart')">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-    清单List <span id="cartCount">0</span>
+    List <span id="cartCount">0</span>
   </button>
 </div>
 
@@ -177,11 +177,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink)
 <div class="page active" id="page-home">
   <div class="hero">
     <h1>RUIYI Product Catalog</h1>
-    <p>浏览各系列产品，查看详情<br>Browse various product series and view details.<br>勾选您心仪产品，提交您的需求清单<br>Select the products you’re interested in and submit your request list.<br>Contact Us:email —— sales003@zslongzun.com</p>
+    <p>浏览各系列产品，查看详情<br>Browse various product series and view details.<br>勾选您心仪产品，提交您的需求清单<br>Select the products you’re interested in and submit your request list.<br>Email：sales003@zslongzun.com</p>
   </div>
-  <div class="section-label">全部系列</div>
+  <div class="section-label">全部系列 All series</div>
   <div id="catGrid" class="cat-grid">
-    <div class="loading-box" style="grid-column:1/-1"><div class="spinner"></div><p>加载中...</p></div>
+    <div class="loading-box" style="grid-column:1/-1"><div class="spinner"></div><p>Loading...</p></div>
   </div>
 </div>
 
@@ -189,7 +189,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink)
 <div class="page" id="page-products">
   <div class="page-header">
     <button class="back-btn" onclick="showPage('home')">‹</button>
-    <h2 id="cat-title">系列产品</h2>
+    <h2 id="cat-title">系列产品Series of products</h2>
   </div>
   <div class="product-list" id="productList"></div>
 </div>
@@ -198,23 +198,23 @@ body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink)
 <div class="page" id="page-detail">
   <div class="page-header">
     <button class="back-btn" id="detailBack">‹</button>
-    <h2 id="detail-title">产品详情</h2>
+    <h2 id="detail-title">产品详情 Product Details</h2>
   </div>
   <div class="detail-img-wrap" id="detailImgWrap">
     <div class="detail-img-placeholder" id="detailImgPh"></div>
     <img id="detailMainImg" src="" alt="" style="display:none" onclick="openLightbox(this.src)">
-    <div class="zoom-hint" id="zoomHint" style="display:none">点击放大 🔍</div>
+    <div class="zoom-hint" id="zoomHint" style="display:none">Click to zoom in 🔍</div>
   </div>
   <div class="detail-body">
     <div class="detail-series" id="detail-series"></div>
     <div class="detail-name" id="detail-name"></div>
     <div class="detail-desc" id="detail-desc"></div>
-    <div class="specs-title">选择规格 &amp; 需求量</div>
+    <div class="specs-title">选择规格Select specifications &amp; 需求量Demand</div>
     <div id="specList"></div>
   </div>
   <div class="detail-footer">
     <div class="detail-footer-row">
-      <div class="detail-selected-info">已选 <span id="detailSelectedCount">0</span> 个规格加入清单</div>
+      <div class="detail-selected-info">已选 <span id="detailSelectedCount">0</span> 个规格加入清单 Add to the specification list</div>
     </div>
     <button class="view-cart-btn" onclick="showPage('cart')">查看需求清单</button>
   </div>
