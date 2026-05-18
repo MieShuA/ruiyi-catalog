@@ -214,9 +214,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink)
   </div>
   <div class="detail-footer">
     <div class="detail-footer-row">
-      <div class="detail-selected-info">已选 <span id="detailSelectedCount">0</span> 个规格加入清单 Add to the specification list</div>
+      <div class="detail-selected-info">已选 Selected <span id="detailSelectedCount">0</span> 个规格加入清单 Add to the specification list</div>
     </div>
-    <button class="view-cart-btn" onclick="showPage('cart')">查看需求清单</button>
+    <button class="view-cart-btn" onclick="showPage('cart')">查看需求清单 Check the requirements list</button>
   </div>
 </div>
 
@@ -224,44 +224,44 @@ body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink)
 <div class="page" id="page-cart">
   <div class="page-header">
     <button class="back-btn" onclick="showPage('home')">‹</button>
-    <h2>我的需求清单</h2>
+    <h2>我的需求清单 My wish list</h2>
   </div>
   <div id="cartEmpty" class="cart-empty" style="display:none">
     <div class="empty-icon">📋</div>
-    <p>还没有选择任何产品<br>去浏览系列产品吧</p>
+    <p>还没有选择任何产品<br>去浏览系列产品吧<br>No products have been selected yet<br>Check out the product series.</p>
   </div>
   <div id="cartMain">
     <div class="cart-content" id="cartItems"></div>
     <div style="padding:0 14px">
       <div class="form-section">
-        <div class="form-title">您的联系信息</div>
-        <div class="form-field"><label>姓名 <span class="required">*</span></label><input type="text" id="f-name" placeholder="请输入您的姓名"></div>
-        <div class="form-field"><label>联系电话 <span class="required">*</span></label><input type="tel" id="f-phone" placeholder="请输入手机号码"></div>
-        <div class="form-field"><label>邮箱 <span class="required">*</span></label><input type="text" id="f-email" placeholder="请输入您的邮箱"></div>
-        <div class="form-field"><label>公司名称</label><input type="text" id="f-company" placeholder="请输入公司名称（选填）"></div>
-        <div class="form-field"><label>备注说明</label><textarea id="f-note" placeholder="如有特殊要求，请在此填写（选填）"></textarea></div>
+        <div class="form-title">您的联系信息Your contact information</div>
+        <div class="form-field"><label>Name <span class="required">*</span></label><input type="text" id="f-name" placeholder="Please enter your name"></div>
+        <div class="form-field"><label>Phone number <span class="required">*</span></label><input type="tel" id="f-phone" placeholder="Please enter your mobile phone number"></div>
+        <div class="form-field"><label>Email <span class="required">*</span></label><input type="text" id="f-email" placeholder="Please enter your email"></div>
+        <div class="form-field"><label>Company Name</label><input type="text" id="f-company" placeholder="Please enter the company name"></div>
+        <div class="form-field"><label>备注说明Notes and descriptions</label><textarea id="f-note" placeholder="如有特殊要求，请在此填写（选填）<br>If there are special requirements, please fill in here (optional)"></textarea></div>
       </div>
     </div>
     <div class="submit-area">
-      <button class="submit-btn" onclick="submitForm()">提交需求清单</button>
-      <div class="submit-note">提交后我们会尽快与您联系</div>
+      <button class="submit-btn" onclick="submitForm()">提交需求清单Submit the requirements list</button>
+      <div class="submit-note">提交后我们会尽快与您联系<br>After submission, we will contact you as soon as possible.</div>
     </div>
   </div>
   <div class="success-wrap" id="successWrap">
     <div class="success-icon">✅</div>
-    <div class="success-title">提交成功！</div>
-    <div class="success-sub">感谢您的关注，我们已收到您的需求清单<br>我们的销售人员会尽快与您联系</div>
-    <button class="success-back" onclick="resetAndHome()">继续浏览产品</button>
+    <div class="success-title">提交成功！<br>Submitted successfully!</div>
+    <div class="success-sub">感谢您的关注，我们已收到您的需求清单<br>我们的销售人员会尽快与您联系<br>Thank you for your attention, we have received your list of requirements.Our sales staff will contact you as soon as possible</div>
+    <button class="success-back" onclick="resetAndHome()">继续浏览产品<br>Continue browsing products</button>
   </div>
 </div>
 
 <div class="bottom-nav" id="bottomNav">
   <div class="nav-item active" id="nav-home" onclick="showPage('home')">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>首页
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>首页 Home page
   </div>
   <div class="nav-item" id="nav-cart" onclick="showPage('cart')">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-    需求清单<div class="nav-dot" id="navDot"></div>
+    需求清单 Requirement list<div class="nav-dot" id="navDot"></div>
   </div>
 </div>
 
@@ -358,7 +358,7 @@ function showDetail(si, pi) {
   document.getElementById('detail-title').textContent  = prod.name;
   document.getElementById('detail-series').textContent = series.name + '系列';
   document.getElementById('detail-name').textContent   = prod.name;
-  document.getElementById('detail-desc').textContent   = prod.desc || '暂无详细说明';
+  document.getElementById('detail-desc').textContent   = prod.desc || '暂无详细说明No detailed description available';
   document.getElementById('detailBack').onclick = () => showPage('products');
 
   const firstImg = prod.specs && prod.specs[0] ? prod.specs[0].img : '';
@@ -432,7 +432,7 @@ function specHTML(cid, specName, specDesc, qty, inCart, idx, prodName, si, pi, i
     </div>
     ${specDesc ? `<div class="spec-desc">${specDesc}</div>` : ''}
     <div class="spec-bottom">
-      <span class="qty-label">需求量</span>
+      <span class="qty-label">需求量Demand volume</span>
       <div class="qty-stepper">
         <button class="qty-btn" onclick="event.stopPropagation();changeQty('${cid}',-1,this)">−</button>
         <input class="qty-num" id="qn-${sid}" type="number" value="${qty}" min="1" readonly>
@@ -451,7 +451,7 @@ function toggleSpec(cid, prodName, specName, seriesName) {
     document.getElementById('chk-'+sid).className = 'check-pill';
     document.getElementById('chk-'+sid).innerHTML = '';
     document.getElementById('sr-'+sid).classList.remove('selected');
-    showToast('已从清单移除');
+    showToast('已从清单移除Removed from the list');
   } else {
     const inp = document.getElementById('qn-'+sid);
     const qty = inp ? (parseInt(inp.value)||1) : 1;
@@ -459,7 +459,7 @@ function toggleSpec(cid, prodName, specName, seriesName) {
     document.getElementById('chk-'+sid).className = 'check-pill checked';
     document.getElementById('chk-'+sid).innerHTML = '✓';
     document.getElementById('sr-'+sid).classList.add('selected');
-    showToast('已加入清单 ✓');
+    showToast('已加入清单Added to the list ✓');
   }
   updateBadge(); updateDetailCount();
 }
@@ -527,23 +527,23 @@ function removeCart(id) { delete cart[id]; updateBadge(); renderCart(); }
 async function submitForm() {
   const name  = document.getElementById('f-name').value.trim();
   const phone = document.getElementById('f-phone').value.trim();
-  if (!name)  { showToast('请填写您的姓名'); return; }
-  if (!phone) { showToast('请填写联系电话'); return; }
-  if (!Object.keys(cart).length) { showToast('请先选择产品'); return; }
+  if (!name)  { showToast('Please enter your name'); return; }
+  if (!phone) { showToast('Please enter your mobile phone'); return; }
+  if (!Object.keys(cart).length) { showToast('Please select the product first'); return; }
 
   const btn = document.querySelector('.submit-btn');
-  btn.disabled = true; btn.textContent = '提交中...';
+  btn.disabled = true; btn.textContent = '提交中...<br>Submitting...';
 
   const listText = Object.values(cart)
     .map(i => `${i.prodName}【${i.specName}】× ${i.qty}件`).join('\n');
 
   const payload = {
-    姓名: name,
-    电话: phone,
-    邮箱: document.getElementById('f-email').value.trim() || '（未填写）',
-    公司: document.getElementById('f-company').value.trim() || '（未填写）',
-    备注: document.getElementById('f-note').value.trim()    || '（无）',
-    需求清单: listText,
+    Name: name,
+    PhoneNumber: phone,
+    Email: document.getElementById('f-email').value.trim() || '（Not filled out）',
+    CompanyName: document.getElementById('f-company').value.trim() || '（Not filled out）',
+    Notes: document.getElementById('f-note').value.trim()    || '（NUll）',
+    RequirementList: listText,
   };
 
  try {
@@ -558,12 +558,12 @@ async function submitForm() {
     document.getElementById('cartEmpty').style.display = 'none';
     document.getElementById('successWrap').classList.add('show');
   } else {
-    throw new Error(result.error || '提交失败');
+    throw new Error(result.error || '提交失败Submission failed');
   }
 
 } catch(e) {
-  showToast('网络错误，请检查后重试');
-  btn.disabled = false; btn.textContent = '提交需求清单';
+  showToast('网络错误，请检查后重试<br>Network error, please check and retry');
+  btn.disabled = false; btn.textContent = '提交需求清单Submit the requirements list';
 }
 }
 
