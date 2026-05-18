@@ -209,14 +209,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink)
     <div class="detail-series" id="detail-series"></div>
     <div class="detail-name" id="detail-name"></div>
     <div class="detail-desc" id="detail-desc"></div>
-    <div class="specs-title">选择规格Select specifications &amp; 需求量Demand</div>
+    <div class="specs-title">选择规格 &amp; 需求量Select specifications and Demand</div>
     <div id="specList"></div>
   </div>
   <div class="detail-footer">
     <div class="detail-footer-row">
-      <div class="detail-selected-info">已选 Selected <span id="detailSelectedCount">0</span> 个规格加入清单 Add to the specification list</div>
+      <div class="detail-selected-info">已选 <span id="detailSelectedCount">0</span> 个规格加入清单 Add to the specification list</div>
     </div>
-    <button class="view-cart-btn" onclick="showPage('cart')">查看需求清单 Check the requirements list</button>
+    <button class="view-cart-btn" onclick="showPage('cart')">查看需求清单 <br>Check the requirements list</button>
   </div>
 </div>
 
@@ -224,7 +224,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink)
 <div class="page" id="page-cart">
   <div class="page-header">
     <button class="back-btn" onclick="showPage('home')">‹</button>
-    <h2>我的需求清单 My wish list</h2>
+    <h2>My wish list</h2>
   </div>
   <div id="cartEmpty" class="cart-empty" style="display:none">
     <div class="empty-icon">📋</div>
@@ -239,11 +239,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink)
         <div class="form-field"><label>Phone number <span class="required">*</span></label><input type="tel" id="f-phone" placeholder="Please enter your mobile phone number"></div>
         <div class="form-field"><label>Email <span class="required">*</span></label><input type="text" id="f-email" placeholder="Please enter your email"></div>
         <div class="form-field"><label>Company Name</label><input type="text" id="f-company" placeholder="Please enter the company name"></div>
-        <div class="form-field"><label>备注说明Notes and descriptions</label><textarea id="f-note" placeholder="如有特殊要求，请在此填写（选填）<br>If there are special requirements, please fill in here (optional)"></textarea></div>
+        <div class="form-field"><label>Notes and descriptions</label><textarea id="f-note" placeholder="如有特殊要求，请在此填写If there are special requirements, please fill in here (optional)"></textarea></div>
       </div>
     </div>
     <div class="submit-area">
-      <button class="submit-btn" onclick="submitForm()">提交需求清单Submit the requirements list</button>
+      <button class="submit-btn" onclick="submitForm()">提交需求清单<br>Submit the requirements list</button>
       <div class="submit-note">提交后我们会尽快与您联系<br>After submission, we will contact you as soon as possible.</div>
     </div>
   </div>
