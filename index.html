@@ -545,27 +545,25 @@ async function submitForm() {
     需求清单: listText,
   };
 
-  try {
-    // Google Apps Script 需要用 no-cors 模式发送
-    // 用 FormData 方式传参，兼容性最好
-    const form = new FormData();
-    form.append('data', JSON.stringify(payload));
-
-    await fetch(SUBMIT_URL, {
-      method: 'POST',
-      mode: 'no-cors',  // GAS 不返回 CORS 头，必须用 no-cors
-      body: form,
-    });
-
-    // no-cors 模式下无法读取响应，只要不报错就算成功
-    document.getElementById('cartMain').style.display  = 'none';
+ try {
+  const encoded = encodeURIComponent(JSON.stringify(payload));
+  const url = SUBMIT_URL + '?data=' + encoded;
+  
+  const res = await fetch(url, { method: 'GET' });
+  const result = await res.json();
+  
+  if (result.success) {
+    document.getElementById('cartMain').style.display = 'none';
     document.getElementById('cartEmpty').style.display = 'none';
     document.getElementById('successWrap').classList.add('show');
-
-  } catch(e) {
-    showToast('网络错误，请检查后重试');
-    btn.disabled = false; btn.textContent = '提交需求清单';
+  } else {
+    throw new Error(result.error || '提交失败');
   }
+
+} catch(e) {
+  showToast('网络错误，请检查后重试');
+  btn.disabled = false; btn.textContent = '提交需求清单';
+}
 }
 
 function resetAndHome() {
