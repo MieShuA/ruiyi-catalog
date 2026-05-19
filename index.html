@@ -99,7 +99,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink)
 .qty-stepper{display:flex;align-items:center;border:1px solid var(--border);border-radius:6px;overflow:hidden;}
 .qty-btn{width:28px;height:28px;background:var(--surface);border:none;font-size:17px;cursor:pointer;color:var(--ink2);font-family:'DM Sans',sans-serif;display:flex;align-items:center;justify-content:center;}
 .qty-btn:active{background:var(--border);}
-.qty-num{width:36px;height:28px;border:none;border-left:1px solid var(--border);border-right:1px solid var(--border);text-align:center;font-size:13px;font-weight:600;background:var(--white);color:var(--ink);font-family:'DM Sans',sans-serif;}
+.qty-num{width:40px;height:28px;border:none;border-left:1px solid var(--border);border-right:1px solid var(--border);text-align:center;font-size:13px;font-weight:600;background:var(--white);color:var(--ink);font-family:'DM Sans',sans-serif;outline:none;padding:0;-moz-appearance:textfield;}
+.qty-num::-webkit-inner-spin-button,.qty-num::-webkit-outer-spin-button{-webkit-appearance:none;}
+.qty-num:focus{background:#fff8f0;}
 .qty-unit{font-size:12px;color:var(--ink3);}
 .check-pill{margin-left:auto;width:26px;height:26px;border-radius:50%;border:2px solid var(--border);background:var(--white);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .15s;flex-shrink:0;}
 .check-pill.checked{background:var(--red);border-color:var(--red);color:white;font-size:13px;}
@@ -435,7 +437,7 @@ function specHTML(cid, specName, specDesc, qty, inCart, idx, prodName, si, pi, i
       <span class="qty-label">需求量Demand volume</span>
       <div class="qty-stepper">
         <button class="qty-btn" onclick="event.stopPropagation();changeQty('${cid}',-1,this)">−</button>
-        <input class="qty-num" id="qn-${sid}" type="number" value="${qty}" min="1" readonly>
+        <input class="qty-num" id="qn-${sid}" type="number" value="${qty}" min="1" oninput="syncQty('${cid}',this)" onchange="syncQty('${cid}',this)" onclick="event.stopPropagation()">
         <button class="qty-btn" onclick="event.stopPropagation();changeQty('${cid}',1,this)">+</button>
       </div>
       <span class="qty-unit">件</span>
@@ -470,6 +472,14 @@ function changeQty(cid, d) {
   if (!inp) return;
   const v = Math.max(1, (parseInt(inp.value)||1) + d);
   inp.value = v;
+  if (cart[cid]) { cart[cid].qty = v; updateBadge(); }
+}
+
+// 新增这个函数（紧跟在 changeQty 后面）：
+function syncQty(cid, inp) {
+  let v = parseInt(inp.value);
+  if (isNaN(v) || v < 1) { inp.value = 1; v = 1; }
+  if (v > 9999) { inp.value = 9999; v = 9999; }
   if (cart[cid]) { cart[cid].qty = v; updateBadge(); }
 }
 
