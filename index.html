@@ -209,7 +209,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink)
     <div class="detail-series" id="detail-series"></div>
     <div class="detail-name" id="detail-name"></div>
     <div class="detail-desc" id="detail-desc"></div>
-    <div class="specs-title">选择规格 &amp; 需求量Select specifications and Demand</div>
+    <div class="specs-title">Specifications &amp; Demand</div>
     <div id="specList"></div>
   </div>
   <div class="detail-footer">
@@ -356,10 +356,10 @@ function showDetail(si, pi) {
   currentProduct = { si, pi, prod, series };
 
   document.getElementById('detail-title').textContent  = prod.name;
-  document.getElementById('detail-series').textContent = series.name + 'Series';
+  document.getElementById('detail-series').textContent = series.name + ' Series';
   document.getElementById('detail-name').textContent   = prod.name;
   document.getElementById('detail-desc').textContent   = prod.desc || 'No detailed description available';
-  document.getElementById('detailBack').onclick = () => showPage('products');
+  document.getElementById('detailBack').onclick = () => showPage(' products');
 
   const firstImg = prod.specs && prod.specs[0] ? prod.specs[0].img : '';
   setDetailImg(firstImg);
@@ -558,11 +558,11 @@ async function submitForm() {
     document.getElementById('cartEmpty').style.display = 'none';
     document.getElementById('successWrap').classList.add('show');
   } else {
-    throw new Error(result.error || '提交失败Submission failed');
+    throw new Error(result.error || 'Submission failed');
   }
 
 } catch(e) {
-  showToast('网络错误，请检查后重试<br>Network error, please check and retry');
+  showToast('Network error, please check and retry');
   btn.disabled = false; btn.textContent = '提交需求清单Submit the requirements list';
 }
 }
