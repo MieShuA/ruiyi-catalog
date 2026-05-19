@@ -318,8 +318,8 @@ function renderHome() {
       <div class="cat-img">${imgHtml}</div>
       <div class="cat-arrow">›</div>
       <div class="cat-info">
-        <div class="cat-name">${s.name}Series</div>
-        <div class="cat-sub">${count}product</div>
+        <div class="cat-name">${s.name} Series</div>
+        <div class="cat-sub">${count} Products</div>
       </div>
     </div>`;
   }).join('');
@@ -343,7 +343,7 @@ function showCategory(si) {
           <div class="prod-body">
             <div class="prod-name">${p.name}${badge}</div>
             <div class="prod-desc-short">${p.desc || '点击查看详情与规格<br>Click to view details and specifications'}</div>
-            <div class="prod-specs-count">${p.specs&&p.specs.length ? p.specs.length+'sizes available →' : 'View details →'}</div>
+            <div class="prod-specs-count">${p.specs&&p.specs.length ? p.specs.length+' sizes available →' : 'View details →'}</div>
           </div>
         </div>`;
       }).join('')
@@ -440,7 +440,7 @@ function specHTML(cid, specName, specDesc, qty, inCart, idx, prodName, si, pi, i
         <input class="qty-num" id="qn-${sid}" type="number" value="${qty}" min="1" oninput="syncQty('${cid}',this)" onchange="syncQty('${cid}',this)" onclick="event.stopPropagation()">
         <button class="qty-btn" onclick="event.stopPropagation();changeQty('${cid}',1,this)">+</button>
       </div>
-      <span class="qty-unit">件</span>
+      <span class="qty-unit"> Units</span>
     </div>
   </div>`;
 }
