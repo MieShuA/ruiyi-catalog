@@ -304,7 +304,7 @@ async function loadData() {
 function renderHome() {
   if (!seriesData.length) {
     document.getElementById('catGrid').innerHTML =
-      `<div class="error-box" style="grid-column:1/-1"><div class="ei">📭</div><p>暂无产品数据</p></div>`;
+      `<div class="error-box" style="grid-column:1/-1"><div class="ei">📭</div><p>No product data available</p></div>`;
     return;
   }
   document.getElementById('catGrid').innerHTML = seriesData.map((s, si) => {
@@ -326,7 +326,7 @@ function renderHome() {
 // ===== 产品列表 =====
 function showCategory(si) {
   currentSeries = seriesData[si];
-  document.getElementById('cat-title').textContent = currentSeries.name + 'Series';
+  document.getElementById('cat-title').textContent = currentSeries.name + ' Series';
   const products = currentSeries.products || [];
   document.getElementById('productList').innerHTML = products.length
     ? products.map((p, pi) => {
