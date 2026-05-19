@@ -173,7 +173,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink)
   </button>
 </div>
 
-<!-- 首页Home Page -->
+<!-- Home Page -->
 <div class="page active" id="page-home">
   <div class="hero">
     <h1>RUIYI Product Catalog</h1>
@@ -189,7 +189,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink)
 <div class="page" id="page-products">
   <div class="page-header">
     <button class="back-btn" onclick="showPage('home')">‹</button>
-    <h2 id="cat-title">系列产品Series of products</h2>
+    <h2 id="cat-title">Series of products</h2>
   </div>
   <div class="product-list" id="productList"></div>
 </div>
@@ -198,7 +198,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink)
 <div class="page" id="page-detail">
   <div class="page-header">
     <button class="back-btn" id="detailBack">‹</button>
-    <h2 id="detail-title">产品详情 Product Details</h2>
+    <h2 id="detail-title">Product Details</h2>
   </div>
   <div class="detail-img-wrap" id="detailImgWrap">
     <div class="detail-img-placeholder" id="detailImgPh"></div>
@@ -234,7 +234,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink)
     <div class="cart-content" id="cartItems"></div>
     <div style="padding:0 14px">
       <div class="form-section">
-        <div class="form-title">您的联系信息Your contact information</div>
+        <div class="form-title">Your contact information</div>
         <div class="form-field"><label>Name <span class="required">*</span></label><input type="text" id="f-name" placeholder="Please enter your name"></div>
         <div class="form-field"><label>Phone number <span class="required">*</span></label><input type="tel" id="f-phone" placeholder="Please enter your mobile phone number"></div>
         <div class="form-field"><label>Email <span class="required">*</span></label><input type="text" id="f-email" placeholder="Please enter your email"></div>
@@ -257,11 +257,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink)
 
 <div class="bottom-nav" id="bottomNav">
   <div class="nav-item active" id="nav-home" onclick="showPage('home')">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>首页 Home page
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>Home
   </div>
   <div class="nav-item" id="nav-cart" onclick="showPage('cart')">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-    需求清单 Requirement list<div class="nav-dot" id="navDot"></div>
+    Requirement list<div class="nav-dot" id="navDot"></div>
   </div>
 </div>
 
@@ -316,8 +316,8 @@ function renderHome() {
       <div class="cat-img">${imgHtml}</div>
       <div class="cat-arrow">›</div>
       <div class="cat-info">
-        <div class="cat-name">${s.name}系列</div>
-        <div class="cat-sub">${count}款产品</div>
+        <div class="cat-name">${s.name}Series</div>
+        <div class="cat-sub">${count}product</div>
       </div>
     </div>`;
   }).join('');
@@ -326,12 +326,12 @@ function renderHome() {
 // ===== 产品列表 =====
 function showCategory(si) {
   currentSeries = seriesData[si];
-  document.getElementById('cat-title').textContent = currentSeries.name + '系列';
+  document.getElementById('cat-title').textContent = currentSeries.name + 'Series';
   const products = currentSeries.products || [];
   document.getElementById('productList').innerHTML = products.length
     ? products.map((p, pi) => {
         const selCount = (p.specs||[]).filter(sp => cart[si+'_'+pi+'_'+sp.name]).length;
-        const badge = selCount ? `<span class="prod-selected-badge">已选${selCount}款</span>` : '';
+        const badge = selCount ? `<span class="prod-selected-badge">Selected${selCount}items</span>` : '';
         const firstImg = p.specs && p.specs[0] ? p.specs[0].img : '';
         const thumbHtml = firstImg
           ? `<img src="${firstImg}" alt="${p.name}" loading="lazy" onerror="this.style.display='none'">`
@@ -340,12 +340,12 @@ function showCategory(si) {
           <div class="prod-thumb">${thumbHtml}</div>
           <div class="prod-body">
             <div class="prod-name">${p.name}${badge}</div>
-            <div class="prod-desc-short">${p.desc || '点击查看详情与规格'}</div>
-            <div class="prod-specs-count">${p.specs&&p.specs.length ? p.specs.length+'个规格可选 →' : '查看详情 →'}</div>
+            <div class="prod-desc-short">${p.desc || '点击查看详情与规格<br>Click to view details and specifications'}</div>
+            <div class="prod-specs-count">${p.specs&&p.specs.length ? p.specs.length+'sizes available →' : 'View details →'}</div>
           </div>
         </div>`;
       }).join('')
-    : `<div class="error-box"><div class="ei">📭</div><p>该系列暂无产品</p></div>`;
+    : `<div class="error-box"><div class="ei">📭</div><p>This series has no products</p></div>`;
   showPage('products');
 }
 
@@ -356,9 +356,9 @@ function showDetail(si, pi) {
   currentProduct = { si, pi, prod, series };
 
   document.getElementById('detail-title').textContent  = prod.name;
-  document.getElementById('detail-series').textContent = series.name + '系列';
+  document.getElementById('detail-series').textContent = series.name + 'Series';
   document.getElementById('detail-name').textContent   = prod.name;
-  document.getElementById('detail-desc').textContent   = prod.desc || '暂无详细说明No detailed description available';
+  document.getElementById('detail-desc').textContent   = prod.desc || 'No detailed description available';
   document.getElementById('detailBack').onclick = () => showPage('products');
 
   const firstImg = prod.specs && prod.specs[0] ? prod.specs[0].img : '';
@@ -451,7 +451,7 @@ function toggleSpec(cid, prodName, specName, seriesName) {
     document.getElementById('chk-'+sid).className = 'check-pill';
     document.getElementById('chk-'+sid).innerHTML = '';
     document.getElementById('sr-'+sid).classList.remove('selected');
-    showToast('已从清单移除Removed from the list');
+    showToast('Removed from the list');
   } else {
     const inp = document.getElementById('qn-'+sid);
     const qty = inp ? (parseInt(inp.value)||1) : 1;
@@ -459,7 +459,7 @@ function toggleSpec(cid, prodName, specName, seriesName) {
     document.getElementById('chk-'+sid).className = 'check-pill checked';
     document.getElementById('chk-'+sid).innerHTML = '✓';
     document.getElementById('sr-'+sid).classList.add('selected');
-    showToast('已加入清单Added to the list ✓');
+    showToast('Added to the list ✓');
   }
   updateBadge(); updateDetailCount();
 }
@@ -508,7 +508,7 @@ function renderCart() {
 
   document.getElementById('cartItems').innerHTML = Object.entries(bySeries).map(([sName, items]) =>
     `<div class="cart-section">
-      <div class="cart-section-title">${sName}系列</div>
+      <div class="cart-section-title">${sName}Series</div>
       ${items.map(it => `<div class="cart-item">
         <div class="cart-item-left">
           <div class="cart-item-name">${it.prodName}</div>
